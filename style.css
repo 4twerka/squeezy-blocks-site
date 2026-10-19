@@ -79,12 +79,12 @@ section { padding:56px 0; }
 .sub { text-align:center; color:var(--muted); margin:0 auto 32px; max-width:560px; }
 
 /* Screenshots: a grid that always fits the page (6 / 3 / 2 across). */
-.shots { display:grid; grid-template-columns:repeat(6, 1fr); gap:14px; }
+.shots { display:grid; grid-template-columns:repeat(4, 1fr); gap:18px; max-width:880px; margin:0 auto; }
 .shots img { width:100%; height:auto; aspect-ratio:1320 / 2868; object-fit:cover; border-radius:18px;
   box-shadow:0 12px 28px rgba(0,0,0,.45); outline:3px solid rgba(255,255,255,.14); outline-offset:-3px;
   transition:transform .2s; }
 .shots img:hover { transform:translateY(-6px) rotate(-1deg); }
-@media (max-width: 1000px) { .shots { grid-template-columns:repeat(3, 1fr); gap:16px; } .shots img { border-radius:22px; } }
+@media (max-width: 1000px) { .shots { grid-template-columns:repeat(4, 1fr); gap:14px; } .shots img { border-radius:18px; } }
 @media (max-width: 560px) { .shots { grid-template-columns:repeat(2, 1fr); gap:12px; } }
 
 /* Cards */
